@@ -1,0 +1,50 @@
+.container {
+    height: 250px;
+    background-color: #272a39;
+    text-align: center;
+    .text {
+        padding-top: 70px;
+        padding-bottom: 40px;
+        p {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        span {
+            color: #ffab0b;
+            position: relative;
+
+            .line {
+                border: 1px solid #ffab0b;
+                display: inline-block;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                transform: translateY(20deg);
+            }
+        }
+
+        .gray {
+            color: #94979f;
+            font-size: 16px;
+        }
+    }
+
+    .label {
+        input {
+            background-color: #667287;
+            border: none;
+            margin: 0 8px;
+            padding: 4px 6px;
+            color: #fff;
+        }
+
+        button {
+            background-color: #ffab0b;
+            color: #fff;
+            padding: 4px 40px;
+            border: none;
+        }
+    }
+}

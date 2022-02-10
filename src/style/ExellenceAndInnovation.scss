@@ -1,0 +1,48 @@
+.container {
+    text-align: center;
+
+    .image {
+        margin-top: 100px;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    span {
+        color: #94979f;
+        font-size: 20px;
+    }
+
+    .line {
+        border: 1px solid #ffab0b;
+        width: 200px;
+        margin: 40px auto;
+    }
+
+    main {
+        display: flex;
+        width: 1300px;
+        margin: 100px auto;
+
+        .left {
+            text-align: left;
+            width: 700px;
+
+            p {
+                margin-bottom: 20px;
+                font-size: 18px;
+                line-height: 32px;
+                color: #94979f;
+            }
+        }
+
+        .right {
+            img {
+                width: 500px;
+                margin-top: 40px;
+                margin-left: 80px;
+            }
+        }
+    }
+}

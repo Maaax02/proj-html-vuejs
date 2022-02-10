@@ -6,9 +6,7 @@
       </span>
     </div>
     <div class="social">
-      <i v-for="(logo, x) in logos" :key="x" :class="logo">
-        
-      </i>
+      <i v-for="(logo, x) in logos" :key="x" :class="logo"> </i>
     </div>
   </div>
 </template>
@@ -25,10 +23,10 @@ export default {
         " 1.800.555.6789",
       ],
       logos: [
-        "fab fa-instagram",
+        "fab fa-facebook-f",
         "fab fa-twitter",
         "fab fa-youtube",
-        "fab fa-facebook-f",
+        "fab fa-instagram",
       ],
     };
   },
@@ -46,9 +44,19 @@ export default {
     padding: 0 20px;
   }
 
-  i{
-      color: #94979f;
-      padding: 0 10px;
+  i {
+    color: #94979f;
+    padding: 0 10px;
+    transition: all 1s;
+    cursor: pointer;
+
+    &:hover{
+      color: #ffab0b;
+      transition:all 1s;
+    }
+  }
+  .social {
+    margin-right: 150px;
   }
 }
 </style>

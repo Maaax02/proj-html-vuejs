@@ -37,49 +37,50 @@
           </div>
         </div>
         <div class="bottom">
-            <div>
-
-          <div
-            class="resources"
-            v-for="(resource, index) in resources"
-            :key="index"
-          >
-            <h2>{{ resource.title }}</h2>
-            <span>{{ resource.text }}</span>
-          </div>
+          <div>
+            <div
+              class="resources"
+              v-for="(resource, index) in resources"
+              :key="index"
+            >
+              <h2>{{ resource.title }}</h2>
+              <span>{{ resource.text }}</span>
             </div>
-            <div>
-
-          <div class="quick" v-for="(quick, index) in quickLinks" :key="index">
-            <h2>{{ quick.title }}</h2>
-            <span>{{ quick.text }}</span>
           </div>
+          <div>
+            <div
+              class="quick"
+              v-for="(quick, index) in quickLinks"
+              :key="index"
+            >
+              <h2>{{ quick.title }}</h2>
+              <span>{{ quick.text }}</span>
             </div>
+          </div>
         </div>
       </section>
       <section>
-          <div class="events">
-              <div class="card" v-for="(card, index) in events" :key="index">
-                  <h2>{{card.title}}</h2>
-                    <div class="seminar">
-                        
-                        <div class="number">
-                            <div class="day">
-                                {{card.day}}
-                            </div>
-                            {{card.num}}
-                        </div>
-
-                        <div class="testo">
-                        <h4>{{card.tinyTitle}}</h4>
-                        <span>{{card.text}}</span>
-                        <p>{{card.place}}</p>
-                        </div>
-                    </div>
+        <div class="events">
+          <div class="card" v-for="(card, index) in events" :key="index">
+            <h2>{{ card.title }}</h2>
+            <div class="seminar">
+              <div class="number">
+                <div class="day">
+                  {{ card.day }}
+                </div>
+                {{ card.num }}
               </div>
+
+              <div class="testo">
+                <h4>{{ card.tinyTitle }}</h4>
+                <span>{{ card.text }}</span>
+                <p>{{ card.place }}</p>
+              </div>
+            </div>
           </div>
-          <br>
-          View More...
+        </div>
+        <br />
+        View More...
       </section>
     </div>
   </div>
@@ -92,7 +93,7 @@ export default {
       university: [
         {
           title: "AVADA UNIVERSITY",
-          icon: "fas fa",
+          icon: "fas fa-home",
           text: "Residential Location 9521 Broadsberry Avenue Paddington RC7 9ZA",
         },
         {
@@ -104,7 +105,7 @@ export default {
           text: "info@your-domain.com",
         },
         {
-          icon: "fa-solid fa-clock",
+          icon: "fas fa-clock",
           text: "Monday - Friday: 8:00 AM - 10:00 PM",
         },
       ],
@@ -188,158 +189,28 @@ export default {
           text: "Careers",
         },
       ],
-      events : [
-          {
-              title : 'UPCOMING EVENTS',
-              tinyTitle : 'Business Seminar',
-              text : 'July 1, 2019 @ 8:00 am - July 1, 2021 @ 5:00 pm',
-              place : 'United States',
-              day : 'FRI',
-              num : '27'
-          },
-          {
-              tinyTitle : 'Politics Seminar',
-              text : 'November 6, 2019 @ 8:00 am - November 6, 2021 @ 5:00 pm',
-              place : 'United Kingdom',
-              day : 'FRI',
-              num : '27'
-          }
-      ]
+      events: [
+        {
+          title: "UPCOMING EVENTS",
+          tinyTitle: "Business Seminar",
+          text: "July 1, 2019 @ 8:00 am - July 1, 2021 @ 5:00 pm",
+          place: "United States",
+          day: "FRI",
+          num: "27",
+        },
+        {
+          tinyTitle: "Politics Seminar",
+          text: "November 6, 2019 @ 8:00 am - November 6, 2021 @ 5:00 pm",
+          place: "United Kingdom",
+          day: "FRI",
+          num: "27",
+        },
+      ],
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.container {
-  height: 600px;
-  background-image: url("../../public/img/university_ft_bg.png");
-  background-size: cover;
-  border-bottom:1px solid #667287;
-
-  .row {
-    margin-top: 80px;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-
-    .university {
-      width: 260px;
-
-      h2 {
-        margin-bottom: 20px;
-      }
-    }
-
-    .posts {
-      .border-bottom {
-        padding-bottom: 16px;
-        margin-top: 20px;
-        position: relative;
-        width: 320px;
-        border-bottom: 1px solid gray;
-
-        p {
-          margin: 20px 0;
-        }
-
-        span {
-          color: #667287;
-        }
-      }
-    }
-    .big {
-      width: 450px;
-      display: flex;
-      justify-content: space-between;
-
-
-      .top {
-        margin-bottom: 20px;
-      }
-    }
-
-    .courses {
-      h2 {
-        margin-bottom: 18px;
-      }
-    }
-
-    .courses:last-child {
-      margin-bottom: 50px;
-    }
-
-    .admission {
-      h2 {
-        margin: 18px 0;
-      }
-    }
-
-    .resources {
-      h2 {
-        margin-bottom: 18px;
-      }
-    }
-
-    .resources:last-child{
-        margin-bottom: 50px;
-    }
-
-    .quick {
-      h2 {
-        margin: 18px 0;
-      }
-    }
-
-    .events{
-        .card{
-            border-bottom: 1px solid #94979f;
-        }
-        .seminar{
-            height: 100px;
-            width: 500px;
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-
-            h4{
-                height: 20px;
-            }
-
-            .testo{
-               margin-left: 18px;
-            }
-
-            
-        }
-        
-        .number{
-            width: 50px;
-            height: 70px;
-            background-color: #ffab0b;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: center;
-            color: #fff;
-            padding-bottom: 4px;
-            font-weight: bold;
-
-
-            .day{
-                width: 42px;
-                height: 40px;
-                background-color: #E6E6E6;
-                margin: 3px auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #ffab0b;
-            }
-        }
-
-
-    }
-  }
-}
+@import "@/style/FooterBox.scss";
 </style>

@@ -15,7 +15,7 @@
       
         <div class="middle">
           <h3>{{ item.title }}</h3>
-          <span>{{ item.date }}</span>
+          <span>{{item.by}} <span id="admin">{{item.author}}</span>{{ item.date }}</span>
         </div>
         <div class="bottom">
           {{ item.read }}
@@ -34,21 +34,27 @@ export default {
         {
           image: "first",
           title: "What do successful grads think you should study?",
-          date: "By `<span>admin</span>` | March 16th, 2016",
+          by : 'By',
+          author : ' Admin',
+          date: " | March 16th, 2016",
           read: "Read More >",
           class: "fas fa-comments",
         },
         {
           image: "second",
           title: "former student discusses success in the faschion industry",
-          date: "By `<span>admin</span>` | March 16th, 2016",
+          by : 'By',
+          author: 'Admin',
+          date: " | March 16th, 2016",
           read: "Read More >",
           class: "fas fa-comments",
         },
         {
           image: "third",
           title: "How do you best prepare for university?",
-          date: "By `<span>admin</span>` | March 16th, 2016",
+          by : 'By',
+          author : 'Admin',
+          date: " | March 16th, 2016",
           read: "Read More >",
           class: "fas fa-comments",
         },
@@ -59,83 +65,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  .top {
-    margin: 60px auto;
-    width: 600px;
-    text-align: center;
-  }
-  image {
-    margin-top: 140px;
-  }
-
-  h1 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
-
-  .line {
-    border-bottom: 1px solid #ffab0b;
-    width: 200px;
-    margin: 20px auto;
-  }
-
-  .section {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    justify-content: space-around;
-    text-align: left;
-
-    .first{
-      background: url("../../public/img/news_single_post_header_1.jpg");
-      background-size: cover;
-    }
-
-    .second{
-      background: url("../../public/img/news_single_post_header_2.jpg");
-      background-size: cover;
-    }
-
-    .third{
-      background: url("../../public/img/news_single_post_header_3.jpg");
-      background-size: cover;
-    }
-    .card {
-      height: 400px;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-
-      .image {
-        width: 300px;
-        height: 170px;
-        margin-bottom: 20px;
-      }
-      .bottom{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 40px;
-        padding: 0 4px;
-
-        i{
-          color: #ffab0b;
-        }
-      }
-
-      .middle{
-
-        h3{
-          margin-bottom: 10px;
-          color: #ffab0b;
-        }
-        span{
-          font-size: 14px;
-          color: #94979f;
-        }
-      }
-    }
-
-  }
-}
+@import "@/style/News.scss"
 </style>

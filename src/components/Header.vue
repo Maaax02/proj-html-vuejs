@@ -55,43 +55,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  background-color: #ffab0b;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  justify-content: space-around;
-
-  .left {
-    ul {
-      list-style: none;
-      display: flex;
-
-      li {
-        margin: 0 10px;
-
-        i {
-          padding: 10px;
-          font-size: 20px;
-        }
-      }
-    }
-  }
-
-  .right {
-    ul {
-      list-style: none;
-      display: flex;
-
-      li {
-        margin: 0 4px;
-
-        i {
-          padding: 10px;
-        }
-      }
-    }
-  }
-}
+@import "@/style/HeaderBox.scss";
 </style>
