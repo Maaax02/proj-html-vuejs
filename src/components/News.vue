@@ -42,7 +42,7 @@ export default {
         },
         {
           image: "second",
-          title: "former student discusses success in the faschion industry",
+          title: "Former student discusses success in the fashion industry",
           by : 'By',
           author: 'Admin',
           date: " | March 16th, 2016",

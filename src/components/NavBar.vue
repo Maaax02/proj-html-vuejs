@@ -74,6 +74,7 @@ export default {
       a {
         text-decoration: none;
         color: black;
+        transition: all 1s;
         &:hover {
           text-decoration: underline;
           transition: all 0.8s;

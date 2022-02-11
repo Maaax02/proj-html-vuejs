@@ -31,7 +31,14 @@ export default {
 
   i {
     color: #ffab0b;
+    
   }
+
+  i:active > .sub-menu {
+      transition: all 1s ease-out;
+      color: black;
+      background-color: red;
+    }
 
   .sub-menu {
     width: 100px;
@@ -42,6 +49,8 @@ export default {
     padding: 8px 10px;
     position: absolute;
     border-radius: 10px;
+
+   
 
     a {
       text-decoration: none;

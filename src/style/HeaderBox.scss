@@ -44,12 +44,12 @@
 
         i {
           padding: 10px;
-          transition: all 1s;
+          transition: all .5s;
           cursor: pointer;
 
           &:hover {
             font-size: 18px;
-            transition: all 1s;
+            transition: all .5s;
           }
         }
       }

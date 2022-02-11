@@ -6,7 +6,7 @@
       </span>
     </div>
     <div class="social">
-      <i v-for="(logo, x) in logos" :key="x" :class="logo"> </i>
+      <i v-for="(logo, x) in logos" :key="x" :class="logo"></i>
     </div>
   </div>
 </template>
@@ -41,7 +41,9 @@ export default {
   justify-content: space-between;
 
   span {
-    padding: 0 20px;
+    padding-right: 5px;
+    color: #94979f;
+    cursor: pointer;
   }
 
   i {

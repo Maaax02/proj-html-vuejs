@@ -2,6 +2,16 @@
     display: flex;
     color: #fff;
 
+    span {
+        transition: all 1s;
+
+        &:hover {
+            text-decoration: underline;
+            color: #ffab0b;
+            transition: all 1s;
+        }
+    }
+
     .left {
         background-image: url("../../public/img/home_courses_section_bg.jpg");
         background-size: cover;
