@@ -8,7 +8,7 @@
         </div>
       </section>
       <section>
-        <div class="posts" v-for="(question, x) in post" :key="x">
+        <!-- <div class="posts" v-for="(question, x) in post" :key="x">
           <div class="title">
             <h2>{{ question.title }}</h2>
           </div>
@@ -16,7 +16,7 @@
             <p>{{ question.testo }}</p>
             <span>{{ question.date }}</span>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="big">
         <div class="top">

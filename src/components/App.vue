@@ -42,7 +42,6 @@ export default {
   }
 }
 </script>
-    JoinUsript>
    
 
 <style lang="css">
@@ -51,6 +50,6 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', ;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman' ;
 }
 </style>
